@@ -1,0 +1,22 @@
+{
+
+  "description": "Show GitLab deployment environments in the Commits view",
+  "manifest_version": 3,
+  "name": "GitLab Deployment Environments",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://gitlab.com/*/-/commits/*"],
+      "js": ["showDeployments.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "gitlab-deployment-environments@jmoore34.github.io",
+      "strict_min_version": "58.0"
+    }
+  },
+  "icons": {
+    "48": "icons/gitlab-logo48.png"
+  }
+}
