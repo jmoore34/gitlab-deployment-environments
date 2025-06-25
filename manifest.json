@@ -17,6 +17,7 @@
     }
   },
   "icons": {
-    "48": "icons/gitlab-logo48.png"
+    "48": "icons/gitlab-logo48.png",
+    "128": "icons/gitlab-logo128.png"
   }
 }
